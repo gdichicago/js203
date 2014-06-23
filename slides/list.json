@@ -2,5 +2,14 @@
     "intro.html",
     "welcome.html",
     "introductions.html",
-    "what-well-cover-today.html"
+    "what-well-cover-today.html",
+    "what-is-an-api.html",
+    "how-do-client-side-apis-work.html",
+    "html-and-embedded-object-apis.html",
+    "script-apis.html",
+    "data-apis-with-javascript.html",
+    "xmlhttprequest-as-api.html",
+    "jsonp-apis.html",
+    "client-side-apis.html",
+    "pros-and-cons-of-using-apis-for-data.html"
 ]
