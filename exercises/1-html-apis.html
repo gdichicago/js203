@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+  <title>Girl Develop It</title>
+  <meta charset="utf-8">
+  <link href="../css/reset.css" rel="stylesheet" type="text/css" />
+  <link href="../css/website.css" rel="stylesheet" type="text/css" />
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,800' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>Girl Develop It Chicago</h1>
+        <h2>JS 203 Client-Side APIs</h2>
+        <h3>Exericse 1: HTML APIs</h3>
+      </header>
+
+      <section>
+        <article>
+          <p>In this exercise, you'll try out using several HTML APIs to add more dynamic content to the starter webpage.</p>
+
+          <p><em>Note:</em> the Google Image Chart API has been deprecated by Google, but it should still work well enough for the purpose of these exercises.</p>
+
+          <ol>
+            <li><a href="../materials/class1.zip">Download materials</a></li>
+            <li>Open the class materials for exercise 1 (<code>starter.html</code>). Open the webpage up in the browser and make sure it works. It should pull in video information via an AJAX request and display linked video thumbnails in a list.</li>
+            <li>Go to <a href="http://www.flagcounter.com/">flagcounter.com</a> and set up a hit counter for your website. Put the counter somewhere near the bottom of the page.</li>
+            <li>Go to the Google Charts API Docs and read about the <a href="https://developers.google.com/chart/image/docs/gallery/googleometer_chart">Google-o-meter image chart API</a>. Add a "rating" field to each video in the JSON, like out of 100. Generate a chart for each video that shows its rating</li>
+            <li>Display that chart when you click on the video. Try generating the chart URLs in the browser first, and only code it in JavaScript once you know what you want the URLs to look like.</li>
+            <li>Modify the generated Youtube iframe players so that they auto-play when clicked. <a href="https://developers.google.com/youtube/player_parameters#autoplay">Read the docs here</a>.</li>
+            <li>Bonus: Create a bar chart that compares the ratings across all the videos, using the <a href="https://developers.google.com/chart/image/docs/gallery/bar_charts">Google Bar Charts Image API</a>.</li>
+          </ol>
+
+          <p>Make sure that you use your browser developer tools to make debugging easier while working on this. Check for errors, and use console.log() to figure out how far your code makes it, and what the values of your variables are along the way.</p>
+
+          <br>
+
+          <a class="btn" onclick="showSolution(1)">See Solution</a>
+          <div id="solution1" style="display:none;">
+            <script src="https://gist.github.com/feministy/1b5ccb023ba862821813.js"></script>
+          </div>
+        </article>
+      </section>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/toggle.js"></script>
+  </body>
+</html>

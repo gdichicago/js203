@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+  <title>Girl Develop It</title>
+  <meta charset="utf-8">
+  <link href="../css/reset.css" rel="stylesheet" type="text/css" />
+  <link href="../css/website.css" rel="stylesheet" type="text/css" />
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,800' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>Girl Develop It Chicago</h1>
+        <h2>JS 203 Client-Side APIs</h2>
+        <h3>Exercise 3: JSONP + The Big Huge Thesaurus API = &hearts;</h3>
+      </header>
+
+      <section>
+        <article>
+          <h1>Setup</h1>
+
+          <ol>
+            <li><a href="https://words.bighugelabs.com/login.php">Sign up for a Big Huge Thesaurus account</a></li>
+            <li><a href="https://words.bighugelabs.com/getkey.php">Get an API key</a>. When you will out the form, you'll have to provide a description (10+ words) of your app and a URL. Use whatever you want! <strong>Don't click "Include in public app listing"</strong>. Click "Get API key" and save it onto your computer somewhere.</li>
+            <li>If you're using Chrome, install the <a href="https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en">JSON Formatter</a> extension</li>
+          </ol>
+
+          <h1>Understanding The Big Huge Thesaurus API</h1>
+
+          <p>In this exercise, we're going to be using the <a href="http://words.bighugelabs.com/api.php">Big Huge Thesaurus API</a>.</p>
+
+          <p>View the <a href="http://words.bighugelabs.com/apisample.php?v=2&format=json">sample API request for 'love'</a> to get a better understanding of how the API works.</p>
+
+          <p>Your JSON response will include <a href="http://www.englishclub.com/grammar/parts-of-speech_1.htm">parts of speech</a> as keys, with each broken down into the following categories:</p>
+
+          <ul>
+            <li>synonyms ("syn")</li>
+            <li>antonyms ("ant")</li>
+            <li>related terms ("rel")</li>
+            <li>similar_terms ("sim")</li>
+          </ul>
+
+          <p><strong>Not every word will have every part of speech, or every type of relationship.</strong> Keep this in mind when you're writing your code or you will get some weird errors.</p>
+
+          <h1>Instructions</h1>
+
+          <p>In this exercise, we're going to be using the <a href="http://words.bighugelabs.com/api.php">Big Huge Thesaurus API</a> to query words and add them onto our page.</p>
+
+          <p>You can edit the JavaScript file and the HTML file if you want.</p>
+
+          <p>When you work with JavaScript APIs, you have to be running a server for your API call to be successful (this is a security thing). There is an easy(ish) way to run a local server on a Mac (<a href="local-server.html">instructions if you were curious</a>), but for this class we are going to use JSBin instead. <strong>Even if you know how to run a server on your Mac, please use JSBin for this exercise.</strong></p>
+
+          <ol>
+            <li><strong>Before you try and edit the files</strong> get the API working using your API key on your browser. There are sample URLs on your API key page inside of your <a href="https://words.bighugelabs.com/account.php">account</a>.</li>
+            <li>Open the <a href="http://jsbin.com/qodew/1/edit?html,js,output">JSBin starter file</a>. Click <strong>File &gt; Clone</strong> to make a copy.</li>
+            <li>
+              Add a click listener (<a href="http://api.jquery.com/click/">jQuery documentation for <code>click()</code></a>) for the form button that will:
+              <ul>
+                <li>Prevent the form from submitting (<a href="http://api.jquery.com/event.preventdefault/">documentation</a>)</li>
+                <li>Get the value of the word in the text box</li>
+                <li>Send an <code>ajax</code> request to the Big Huge Word Labs API (<a href="http://api.jquery.com/jquery.ajax/">documentation</a>) </li>
+                <li>Process the JSON response using a <code>success</code> callback function</li>
+              </ul>
+            </li>
+            <li>In your callback function, iterate through your JSON using the jQuery <code>$.each</code> (<a href="http://api.jquery.com/jquery.each/">documentation</a>)</li>
+            <li>Display the word however you want (see bonus section for ideas)</li>
+          </ol>
+
+          <h2>Bonus points</h2>
+
+          <ul>
+            <li>Try and avoid editing the HTML file</li>
+            <li>What happens if the text box is empty when the user hits "submit"? Add an alert that tells the user to add a word if the box is empty.</li>
+            <li>Add a header element for each part of speech (noun, verb, etc)</li>
+            <li>Add a subheader for each type of word (synonym, antonym, etc)</li>
+            <li>Make a list for each type of word, and add a list item for each word</li>
+            <li>Edit your code so it is not repetitive</li>
+          </ul>
+
+          <h1>Solution</h1>
+
+          <p>Click the <strong>JavaScript</strong> button in the middle to see the solution.</p>
+
+          <a href="http://jsbin.com/gujago/4/edit?html,js,output" target="_blank">View the solution in a new tab.</a>
+
+          <a class="jsbin-embed" href="http://jsbin.com/gujago/4/embed?html,output">Yay APIs! Big Huge Thesaurus</a><script src="http://static.jsbin.com/js/embed.js"></script>
+
+
+        </article>
+      </section>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Solution toggler -->
+    <!--
+      <button class="btn" onclick="showSolution(1)">See Solution</button>
+      <div id="solution1" style="display:none;">
+        <script src="https://gist.github.com/feministy/721e9b1020a6eba9e6eb.js"></script>
+      </div>
+    -->
+    <script src="js/toggle.js"></script>
+  </body>
+</html>
