@@ -55,3 +55,20 @@ h4 {
 header {
   padding-bottom: 20px;
 }
+
+.btn {
+  font-weight: 400;
+  background: $accent;
+  -webkit-box-shadow: 1px 1px 3px #999999;
+  -moz-box-shadow: 1px 1px 3px #999999;
+  box-shadow: 1px 1px 3px #999999;
+  font-family: Arial;
+  color: $background;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  &:hover {
+    background: $light;
+    text-decoration: none;
+  }
+}
