@@ -1,0 +1,19 @@
+<h2>Disqus</h2>
+
+<p><a href="http://gdichicago.com/classes/intro-html-css/index.html">See it in action at the bottom of this page.</a></p>
+
+<p>Sample code (not the code from above):</p>
+
+<pre><code class="html" contenteditable>&lt;div id="disqus_thread"&gt;&lt;/div&gt;
+&lt;script type="text/javascript"&gt;
+    var disqus_shortname = 'otherfancystuff';
+    var disqus_developer = 1;
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+&lt;/script&gt;</code></pre>
+
+<p><a href="https://help.disqus.com/customer/portal/articles/472097-universal-code">Disqus Universal Code documentation</a></p>

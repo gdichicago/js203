@@ -1,0 +1,15 @@
+<h2>Libraries</h2>
+
+<p>When you use a third-party library, your code will look something like this:</p>
+
+<pre><code class="html" contenteditable>&lt;script src="http://apidomain.com/library.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+  apiNamespace.apiFunction();
+&lt;/script&gt;</code></pre>
+
+<p>And their library probably looks something like this:</p>
+
+<pre><code class="js" contenteditable>window.apiNamespace.apiFunction = function() {
+  // Do exciting API thing here
+  // Maybe using images or iframes, too.
+}</code></pre>
