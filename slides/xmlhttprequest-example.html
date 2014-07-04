@@ -1,0 +1,14 @@
+<h2><code>XMLHttpRequest</code></h2>
+
+<p>What it looks like:</p>
+
+<pre><code class="js" contenteditable>var xhr = new XMLHttpRequest();
+xhr.open('GET', 'http://apidomain.com/method?param=bla');
+xhr.onreadystatechange = function() { 
+  if(xhr.readyState == 4 && xhr.status==200) {
+    var data = xhr.responseText;
+  }
+};
+xhr.send();</code></pre>
+
+<p><em>This won't work, so don't try and run it.</em></p>

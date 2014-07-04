@@ -31,7 +31,12 @@
     "exericse-2.html",
     "data-apis-with-javascript.html",
     "xmlhttprequest-as-api.html",
+    "xmlhttprequest-example.html",
+    "same-origin-policy.html",
+    "same-origin-policy-example.html",
     "jsonp-apis.html",
+    "jsonp.html",
+    "exercise-3.html",
     "client-side-apis.html",
     "pros-and-cons-of-using-apis-for-data.html"
 ]
