@@ -31,9 +31,11 @@ body {
   .reveal .slides section a, .reveal .slides section a.roll {
     color: #e64c66;
     text-decoration: none;
-    font-weight: 700;
-    padding: 50px; }
+    font-weight: 700; }
     .reveal .slides section a:hover, .reveal .slides section a.roll:hover {
       color: #2d3e50; }
   .reveal .slides section .strike {
     text-decoration: line-through; }
+
+.reveal .progress span {
+  background-color: #1bbc9b; }

@@ -1,0 +1,19 @@
+<h2>JSONP as API</h2>
+
+<p>Our page:</p>
+
+<pre><code class="html" contenteditable>&lt;script src="http://imagine-it.org/api.php?callback=onLoadData"&gt;
+&lt;/script&gt;
+&lt;script&gt;
+  function onLoadData(json) {
+    $('#demo').html('&lt;h1&gt; YO YO YO ' + json.name + '&lt;/h1&gt;');
+  }
+&lt;/script&gt;</code></pre>
+
+<p>API server:</p>
+
+<pre><code class="php" contenteditable>&lt;?php
+  $callback = $_GET['callback'];
+
+  echo $callback . "({'name': 'Capitol JS'});";
+?&gt;</code></pre>
